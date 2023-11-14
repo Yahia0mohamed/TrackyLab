@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background-color: white;
+    font-size: 1.7vw;
+}
+.navbar .navbar-nav .nav-link{
+    color: black;
+    transition: ease-in-out .7s;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: #222add;
+}
+.navbar .navbar-brand{
+    color: black;
+}
+
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.landing{
+    height: 90vh;
+    z-index: 0;
+    width: 100%;
+}
+
+.bg{
+    filter:grayscale(60%);
+    position: relative;
+    transition: ease-in-out .7s;
+}
+
+.bg:hover{
+    filter:grayscale(0%);
+}
+
+.myLogo{
+    background-color:rgba(192, 192, 192, 0.827);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 25vw;
+}
+.myLogo img{
+    height: 10vw;
+}
+.myLogo h2{
+    font-size: 2vw;
+}
+
+.main-btn{
+    background-color: white;
+    color: black;
+    box-shadow: #878787 4px 4px;
+    font-size: 2vw;
+    transition: 0.7s;
+}
+.main-btn:hover , .main-btn:focus{
+    background-color: #222add;
+    color: white;
+    box-shadow: #878787 4px 4px;
+    transition: 0.7s;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .navbar-nav li{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar-nav{
+        margin-left: 2vw;
+    }
+    .navbar{
+        font-size: 2vw;
+    }
+    .myLogo img{
+        height: 15vw;
+    }
+    .myLogo h2{
+        font-size: 3vw;
+    }
+    .main-btn{
+        font-size: 3vh;
+    }
+}
