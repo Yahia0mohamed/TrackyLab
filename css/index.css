@@ -5,7 +5,7 @@ body{
 
 .navbar {
     background-color: white;
-    font-size: 1.7vw;
+    font-size: 2vw;
 }
 .navbar .navbar-nav .nav-link{
     color: black;
@@ -19,10 +19,24 @@ body{
     color: black;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 2.5s ease;
+}
+
 
 .main-body{
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
 }
 
 
@@ -36,6 +50,8 @@ body{
     filter:grayscale(60%);
     position: relative;
     transition: ease-in-out .7s;
+    height: inherit;
+    width: inherit;
 }
 
 .bg:hover{
@@ -60,7 +76,10 @@ body{
     height: 10vw;
 }
 .myLogo h2{
-    font-size: 2vw;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-right: 2vw;
+    padding-left: 2vw;
 }
 
 .main-btn{
@@ -77,6 +96,100 @@ body{
     transition: 0.7s;
 }
 
+.info{
+    height: 150vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.services{
+    font-size: 1.5vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.stats{
+    font-size: 2vw;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+}
+
+.stats div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nums{
+    font-size: 9vw;
+}
+
+.getUser{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: black;
+    font-size: 6vw;
+    flex-wrap: wrap;
+}
+
+#registerBlock{
+    width: 35%;
+    height: 100%;
+}
+.getUser div p{
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #222add;
+}
+
+footer img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+
 
 
 @media screen and (max-width: 992px) {
@@ -88,15 +201,104 @@ body{
         margin-left: 2vw;
     }
     .navbar{
-        font-size: 2vw;
-    }
-    .myLogo img{
-        height: 15vw;
-    }
-    .myLogo h2{
         font-size: 3vw;
     }
-    .main-btn{
-        font-size: 3vh;
+    .info{
+        height: 160vh;
+        flex-direction: column;
+        padding-top: 2vw;
+        align-items: center;
+        justify-content: center;
     }
+    .services{
+        font-size: 2vw;
+        width: 100%;
+        padding: 3vw;
+    }
+    .stats{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 70%;
+    }
+    .getUser{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #registerBlock{
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .navbar-nav li{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar-nav{
+        margin-left: 2vw;
+    }
+    .navbar{
+        font-size: 4vw;
+    }
+    .myLogo{
+        width: 50vw;
+        height: 39vw;
+    }
+    .info{
+        height: 150vh;
+        flex-direction: column;
+        padding-top: 2vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .services{
+        font-size: 2.5vw;
+        width: 100%;
+        padding: 3vw;
+    }
+    .stats{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 40%;
+        font-size: 5vw;
+    }
+    .nums{
+        font-size: 12vw;
+    }
+    .getUser{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 80vh;
+    }
+    #registerBlock{
+        height: 35%;
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        height: 15vh;
+        font-size: 3vw;
+    }
+    footer ul{
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer span{
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .main-btn{
+        font-size: 3vw;
+    }
+
 }
