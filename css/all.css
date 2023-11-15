@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas Neue");
 body{
     font-family: 'Bebas Neue';
-}
-
-*{
     padding: 0;
     margin: 0;
     width: 100%;
