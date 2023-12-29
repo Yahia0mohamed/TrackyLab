@@ -1,6 +1,6 @@
 .navbar {
     background-color: white;
-    font-size: 2vw;
+    font-size: clamp(18px, 1.8vw, 1000px) !important;
 }
 .navbar .navbar-nav .nav-link{
     color: black;
@@ -195,7 +195,14 @@ footer img {
     margin-right: 5px;
 }
 
-
+@media screen and (max-width: 992px){
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 500px){
     .navbar-nav li{
@@ -204,9 +211,6 @@ footer img {
     }
     .navbar-nav{
         margin-left: 2vw;
-    }
-    .navbar{
-        font-size: 4vw;
     }
     .myLogo{
         width: 50vw;
