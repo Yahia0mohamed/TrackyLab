@@ -1,6 +1,6 @@
 .navbar {
     background-color: white;
-    font-size: clamp(15px, 1.5vw, 1000px) !important;
+    font-size: clamp(18px, 1.8vw, 1000px) !important;
 }
 .navbar .navbar-nav .nav-link{
     color: black;

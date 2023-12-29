@@ -4,4 +4,8 @@ body{
     padding: 0;
     margin: 0;
     width: 100%;
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
