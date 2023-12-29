@@ -96,7 +96,7 @@
 }
 
 .info{
-    height: 120vh;
+    height: 110vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -107,20 +107,22 @@
     font-size: clamp(15px, 1.5vw, 1000px) !important;
 }
 .txt{
-    font-size: clamp(18px, 1.8vw, 1000px) !important;
+    font-size: clamp(15px, 1.5vw, 1000px) !important;
 }
 .txt.big{
     font-size: clamp(25px, 4vw, 1000px) !important;
 }
 
 .services{
-    font-size: 1.4vw;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
+}
+.services #top{
+    margin-bottom: 10vw;
 }
 .stats{
     width: 40%;
@@ -211,14 +213,12 @@ footer img {
         height: 39vw;
     }
     .info{
-        height: 170vh;
         flex-direction: column;
-        padding-top: 2vw;
+        padding-top: .5vw;
         align-items: center;
         justify-content: center;
     }
     .services{
-        font-size: 2.5vw;
         width: 100%;
         padding: 3vw;
     }
@@ -229,6 +229,7 @@ footer img {
         width: 100%;
         height: 40%;
         font-size: 5vw;
+        margin-bottom: 2vw;
     }
     .nums{
         font-size: 12vw;
