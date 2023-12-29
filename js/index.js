@@ -33,3 +33,20 @@ function randomize() {
 
 // Call the randomize function after a delay
 setTimeout(randomize, 1000);
+
+
+function pageMode(){
+    var regButton=document.getElementById('regButton');
+    var logButton=document.getElementById('logButton');
+
+    regButton.addEventListener("click",()=>{
+        localStorage.setItem("mode",1);
+        window.location.href='../html/login-register.html';
+    });
+    logButton.addEventListener("click",()=>{
+        localStorage.setItem("mode",2);
+        window.location.href='../html/login-register.html';
+    });
+}
+
+pageMode();
