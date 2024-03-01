@@ -9,3 +9,54 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+a{
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: white;
+    font-size: clamp(18px, 1.8vw, 1000px) !important;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-nav .nav-link{
+    color: black;
+    transition: ease-in-out .7s;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: #222add;
+}
+.navbar .navbar-brand{
+    color: black;
+}
+
+
+.mainBtn{
+    background-color: white;
+    color: black;
+    box-shadow: #878787 4px 4px;
+    transition: 0.7s;
+    width: clamp(130px, 12vw, 300px) !important;
+    height: clamp(35px, 3vw, 300px) !important;
+    font-size: clamp(15px, 1.5vw, 30px) !important;
+}
+.mainBtn:hover{
+    background-color: #222add;
+    color: white;
+    box-shadow: #878787 4px 4px;
+    transition: 0.7s;
+    
+}
+
+@media screen and (max-width: 992px){
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
